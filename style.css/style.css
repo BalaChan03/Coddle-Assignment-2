@@ -30,34 +30,39 @@
     width:100%;
     background: rgba(187, 186, 186, 0.511);
     padding: 2rem; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.content .bag1
+.content .container-1
+{
+    display: flex;
+    justify-content: center;
+    width: 55rem;
+}
+
+.content .container-1 .bag1
 {
     width: 25rem;
     height: 18rem;
-    margin-right: 4rem;
 }
 
-.content .heading2
+.content .container-1 .heading2
 {
     font-weight: 100;
+    padding-left: 3rem;
 }
 
-.content .heading2 .color
+.content .container-1 .heading2 .color
 {
     color:rgb(219, 121, 73); ;
 }
 
-.content .heading2 .description2
+.content .container-1 .heading2 .description2
 {
     margin-top: 1.3rem;
     font-size: small;
 }
 
-
-.content .heading2 .more
+.content .container-1 .heading2 .more
 {
     font-size: small;
     color: black;
@@ -66,228 +71,390 @@
 .content2
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
     margin-top: 2rem;
+    width:100%;
+    height: 12.5rem;
+    padding:rem; 
 }
 
-.content2 .bag2
+.content2 .container-2
 {
-    width: 56rem;
-    height: 16rem;
-    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 55rem;
 }
 
-@media screen and (max-width: 480px) {
-    .header
-    {
-        padding: .2rem;
-    }
-
-    .header .heading {
-        font-size: 11px;
-    }
-
-    .header .description {
-        font-size: 11px;
-    }
-
-    .content {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .content .bag1 {
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .content .heading2 {
-        text-align: center; 
-        margin-top: 3rem;
-    }
-
-    .content2 .bag2 {
-        width: 90%; 
-        height: auto;
-    }
+.content2 .container-2 .bag2
+{
+    width: 100%;
+    height: auto;
 }
 
-@media screen and (max-width: 768px) {
-
-    .header .heading {
-        font-size: 22px;
-    }
-
-    .content
-    {
-        flex-direction: column;
-        align-items: center;
-        padding: 1.5rem;
-        margin-top: 3rem;
-    }
-
-    .content .heading2
-    {
-        margin-top: 2rem;
-        text-align: center;
-    }
-
-    .header .heading2 .description2 {
-        font-size: 13px;
-        text-align: center;
-    }
-
-    .content .bag1 {
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-    }
-    
-    .content2
-    {
-        margin-top: 2rem;
-    }
-
-    .content2 .bag2 {
-        width: 100%;
-        height: auto;
-    }
+.content2 .container-2 .bag2
+{
+    display: flex;
+    justify-content: center;
 }
 
-@media screen and (max-width: 1024px) {
-    .header .heading {
-        font-size: 26px;
-        margin-top: 1.5rem;
+@media screen and (max-width:1550px)
+{
+    .header .heading
+    {
+        font-size: 30px;
     }
 
     .header .description
     {
-        font-size: 13px;
-        margin-top: 1rem;
-    }
-
-    .content {
-        padding: 3rem;
-        margin-top: 2rem;
-        flex-direction: column;
-    }
-
-    .content .bag1 {
-        width: 75%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .content .heading2
-    {
-        font-size: 28px;
-        text-align: center;
-        margin-top: 3rem;
-    }
-
-    .content .heading2 .description2
-    {
         font-size: 15px;
     }
 
-    .content2 .bag2 {
-        width: 70%;
+    .content
+    {
+        display: flex;
+        justify-content:center;
+        width:100%;
+        margin-top: 2rem;
+    }
+
+    .content .container-1
+    {
+        display: flex;
+        justify-content: center;
+        width: 55rem;
+    }
+
+    .content .container-1 .heading2
+    {
+        font-weight: 100;
+        padding-left: 3rem;
+        font-size: 23px;
+    }
+
+    .content .container-1 .heading2 .description2
+    {
+        margin-top: 1.3rem;
+        font-size: small;
+    }
+
+    .content .container-1 .heading2 .more
+    {
+        font-size: 10px;
+    }
+
+    .content .container-1 .bag1
+    {
+        width: 27rem;
+        height: 20rem;
+    }
+
+    .content2
+    {
+        display: flex;
+        justify-content:center;
+        margin-top:1rem;
+        width:100%;
+        height: 20rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .content2 .container-2
+    {
+        display: flex;
+        justify-content: center;
+        width: 55rem;
+    }
+
+    .content2 .container-2 .bag2
+    {
+        width: 100%;
         height: auto;
-        margin-top: 1.6rem;
+    }
+
+    .content2 .container-2 .bag2
+    {
+        display: flex;
+        justify-content: center;
     }
 }
 
-@media screen and (min-width: 1025px) {
-    .header .heading {
-        font-size: 27px;
-    }
-
-    .content .bag1 {
-        width: 25rem;
-        height: 18rem;
-    }
-
-    .content2 .bag2 {
-        width: 56rem;
-        height: 16rem;
-    }
-}
-
-@media screen and (max-width: 855px) {
-
+@media screen and (max-width:1024px)
+{
     .header .heading
     {
-        margin-top:2.5rem;
+        font-size: 30px;
     }
 
-    .content {
-        padding: 2rem;
-        flex-direction: column;
-        margin-top: 3.5rem;
-    }
-
-    .content .bag1 {
-        width: 85%; 
-        height: auto;
-        margin: 0 auto;
-        padding-top: 1.5rem;
-    }
-
-    .content .heading2 {
-        text-align: center;
-        margin-top: 2.5rem;
-        font-size: 28px;
-    }
-
-    .content .heading2 .description2
+    .header .description
     {
-        margin-top: 2rem;
-    }
-
-    .content2 .bag2 {
-        width: 90%; 
-        height: auto;
-        margin-top: 1rem;
-    }
-}
-
-@media screen and (max-width: 912px) {
-    .content {
-        padding: 2rem;
-        flex-direction: column
-    }
-
-    .content .bag1 {
-        width: 85%; 
-        height: auto;
-        margin: 0 auto;
-        padding-top: 1.5rem;
-    }
-
-    .content .heading2
-    {
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 28px;
-    }
-
-    .content .heading2 .description2
-    {
-        margin-top: 2rem;
         font-size: 15px;
-        text-align: center;
     }
 
-    .content .heading2 .more
+    .content
     {
-        font-size: 19px;
+        margin-top: 2rem;
     }
 
-    .content2 .bag2 {
-        width: 80%;
-        height: auto;
-        margin-top: 1.5rem;
+    .content .container-1
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .content .container-1 .heading2
+    {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 28px;
+    }
+
+    .content .container-1 .heading2 .description2
+    {
+        font-size: 15px;
+    }
+
+    .content .container-1 .heading2 .more
+    {
+        font-size: 10px;
+    }
+
+    .content .container-1 .bag1
+    {
+        width: 100%;
+        height: 23rem;
+    }
+
+    .content2
+    {
+        margin-bottom: 1rem;
+    }
+
+    .content2 .container-2
+    {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        height:25rem;
+        width: 90%;
     }
 }
+
+@media screen and (max-width:912px) {
+
+    .content
+    {
+        margin-top: 2.5rem;
+    }
+
+    .content .container-1
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .content .container-1 .heading2
+    {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 28px;
+    }
+
+    .content .container-1 .heading2 .description2
+    {
+        font-size: 15px;
+    }
+
+    .content .container-1 .heading2 .more
+    {
+        font-size: 14px;
+    }
+
+    .content .container-1 .bag1
+    {
+        width: 100%;
+        height: 28rem;
+    }
+
+    .content2
+    {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .content2 .container-2
+    {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        height:23rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:823px)
+{
+    .content .container-1
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .content .container-1 .heading2
+    {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 18px;
+    }
+
+    .content .container-1 .heading2 .description2
+    {
+        font-size: 10px;
+    }
+
+    .content .container-1 .heading2 .more
+    {
+        font-size: 10px;
+    }
+
+    .content .container-1 .bag1
+    {
+        width: 100%;
+        height: 23rem;
+    }
+
+    .content2
+    {
+        margin-top: rem;
+        margin-bottom: 1rem;
+    }
+
+    .content2 .container-2
+    {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        height: 20rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:768px) 
+{
+    .header .heading
+    {
+        font-size: 22px;
+    }
+
+    .header .description
+    {
+        font-size: 10.9px;
+    }
+
+    .content .container-1
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .content .container-1 .heading2
+    {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 18px;
+    }
+
+    .content .container-1 .heading2 .description2
+    {
+        font-size: 10px;
+    }
+
+    .content .container-1 .heading2 .more
+    {
+        font-size: 10px;
+    }
+
+    .content .container-1 .bag1
+    {
+        width: 100%;
+    }
+
+    .content2
+    {
+        margin-top: rem;
+        margin-bottom: 1rem;
+    }
+
+    .content2 .container-2
+    {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:480px)
+{
+    .header .heading
+    {
+        font-size: 16px;
+    }
+
+    .header .description
+    {
+        font-size: 8px;
+    }
+
+    .content .container-1
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .content .container-1 .heading2
+    {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 1.5rem;
+        font-size: 18px;
+    }
+
+    .content .container-1 .heading2 .description2
+    {
+        font-size: 10px;
+    }
+
+    .content .container-1 .heading2 .more
+    {
+        font-size: 10px;
+    }
+
+    .content .container-1 .bag1
+    {
+        width: 100%;
+    }
+
+    .content2
+    {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .content2 .container-2
+    {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+}
+
