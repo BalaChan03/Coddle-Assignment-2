@@ -97,7 +97,90 @@
     justify-content: center;
 }
 
-@media screen and (max-width:1550px)
+@media screen and (max-width:1280px)
+{
+    .header .heading
+    {
+        font-size: 25px;
+    }
+
+    .header .description
+    {
+        margin-top: 1rem;
+        font-size: 12.5px;
+    }
+
+    .content
+    {
+        display: flex;
+        justify-content:center;
+        width:100%;
+        margin-top: 2rem;
+    }
+
+    .content .container-1
+    {
+        display: flex;
+        justify-content: center;
+        width: 55rem;
+    }
+
+    .content .container-1 .heading2
+    {
+        font-weight: 100;
+        padding-left: 3rem;
+        font-size: 20px;
+    }
+
+    .content .container-1 .heading2 .description2
+    {
+        margin-top: 1.3rem;
+        font-size: 11px;
+    }
+
+    .content .container-1 .heading2 .more
+    {
+        font-size: 10px;
+    }
+
+    .content .container-1 .bag1
+    {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .content2
+    {
+        display: flex;
+        justify-content:center;
+        margin-top:1rem;
+        width:100%;
+        height: 20rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .content2 .container-2
+    {
+        display: flex;
+        justify-content: center;
+        width: 55rem;
+    }
+
+    .content2 .container-2 .bag2
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .content2 .container-2 .bag2
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:1280px)
 {
     .header .heading
     {
@@ -106,6 +189,7 @@
 
     .header .description
     {
+        margin-top: 1rem;
         font-size: 15px;
     }
 
@@ -128,13 +212,13 @@
     {
         font-weight: 100;
         padding-left: 3rem;
-        font-size: 23px;
+        font-size: 20px;
     }
 
     .content .container-1 .heading2 .description2
     {
         margin-top: 1.3rem;
-        font-size: small;
+        font-size: 11px;
     }
 
     .content .container-1 .heading2 .more
@@ -144,7 +228,7 @@
 
     .content .container-1 .bag1
     {
-        width: 27rem;
+        width: 30rem;
         height: 20rem;
     }
 
